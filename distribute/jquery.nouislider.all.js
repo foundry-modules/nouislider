@@ -2311,4 +2311,4 @@ function closure ( target, options, originalOptions ){
 		});
 	};
 
-}( window.jQuery || window.Zepto ));
+}($));
