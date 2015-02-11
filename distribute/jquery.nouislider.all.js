@@ -1422,6 +1422,10 @@ function closure ( target, options, originalOptions ){
 
 // Internal variables
 
+	// FOUNDRY_HACK
+	// Customize document object
+	var doc = $(originalOptions.document || document);
+
 	// All variables local to 'closure' are marked $.
 	var $Target = $(target),
 		$Locations = [-1, -1],
