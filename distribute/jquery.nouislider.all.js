@@ -1872,7 +1872,11 @@ function closure ( target, options, originalOptions ){
 
 		// Fire the 'set' event. As of noUiSlider 7,
 		// this is no longer optional.
-		fireEvents(['set']);
+
+		// FOUNDRY_HACK
+		// Setting value via .val() should not trigger set event to
+		// maintain consistency with other input element.
+		//fireEvents(['set']);
 
 		return this;
 	}
