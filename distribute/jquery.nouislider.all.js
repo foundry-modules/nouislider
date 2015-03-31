@@ -646,7 +646,7 @@ var
 		};
 	};
 
-}( window.jQuery || window.Zepto ));
+}($));
 
 /*jslint browser: true */
 /*jslint white: true */

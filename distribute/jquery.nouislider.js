@@ -1439,4 +1439,4 @@ function closure ( target, options, originalOptions ){
 		return ( rebuildFlag ? rebuild : initialize ).call(this, options);
 	};
 
-}( window.jQuery || window.Zepto ));
+}($));
