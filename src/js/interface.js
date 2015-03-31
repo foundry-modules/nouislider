@@ -20,7 +20,7 @@
 
 			// FOUNDRY_HACK
 			// Fix conflict with mootools.
-			if (this.hasOwnProperty("destroy")) {
+			if (!this.hasOwnProperty("destroy")) {
 			// if ( !this.destroy ) {
 				$(this).noUiSlider( options );
 				return;
