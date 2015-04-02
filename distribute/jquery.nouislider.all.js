@@ -1592,7 +1592,7 @@ function closure ( target, options, originalOptions ){
 
 		// Fire the 'slide' event if any handle moved.
 		if ( state ) {
-			fireEvents(['slide']);
+			fireEvents(['nouislide']);
 		}
 	}
 
@@ -1689,7 +1689,7 @@ function closure ( target, options, originalOptions ){
 		// The set handle to the new position.
 		setHandle( $Handles[total], to );
 
-		fireEvents(['slide', 'set', 'change']);
+		fireEvents(['nouislide', 'set', 'change']);
 
 		if ( options.events.snap ) {
 			start(event, { handles: [$Handles[total]] });
